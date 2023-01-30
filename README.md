@@ -1,4 +1,4 @@
-<h1 align="center"> Turing Encrypter</h1>
+<h1 align="center">DevLinks</h1>
 
 <p align="center">
 Projeto final do DevLinks, um curso de introdução a tecnologias WEB da Rocketseat. <br/>
@@ -18,7 +18,7 @@ Projeto final do DevLinks, um curso de introdução a tecnologias WEB da Rockets
 <br>
 
 <p align="center">
-  <img alt="projeto Decodificador" src=".github/preview.jpg" width="100%">
+  <img alt="Project DevLinks" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O projeto é uma reference landind page que permite adicionar links.
 
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://eliasgonzaga.github.io/reference-landing-page/)
 
 ## 🔖 Layout
 
