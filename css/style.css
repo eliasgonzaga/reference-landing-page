@@ -10,7 +10,7 @@
     --btn-border: rgba(255, 255, 255, 0.5);
     --btn-bg: rgba(255, 255, 255, 0.1);
     --btn-hover: rgba(255, 255, 255, 0.05);
-    --social-hover: rgba(255, 255, 255, 0.2);
+    --highlight-hover: rgba(255, 255, 255, 0.2);
     --switch-btn-url: url(../img/moon-stars.svg);
 }
 
@@ -20,12 +20,13 @@
     --btn-border: rgba(0, 0, 0, 0.5);
     --btn-bg: rgba(0, 0, 0, 0.05);
     --btn-hover: rgba(0, 0, 0, 0.02);
-    --social-hover: rgba(0, 0, 0, 0.1);
+    --highlight-hover: rgba(0, 0, 0, 0.1);
     --switch-btn-url: url(../img/sun.svg);
 }
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -38,7 +39,6 @@ body * {
     flex-direction: column;
     width: 100%;
     max-width: 588px;
-    min-width: 320px;
     height: 712px;
     margin: 56px auto 0;
     padding: 24px;
@@ -74,16 +74,21 @@ body * {
     border-radius: 50%;
     border: 0;
     
-
     position: absolute;
     z-index: 1;
-    left: initial;
+    left: 0;
     top: 50%; /*muda a posição do elemento em relação ao width/height da tag pai relativa*/
     transform: translateY(-50%); /*muda a posição do elemento em relação ao seu width e hight*/
+    animation: slide-out 0.2s;
+    transition: outline 0.02s;
+}
+
+.switch button:hover{
+    outline: 8px solid var(--highlight-hover);
 }
 
 .light .switch button{
-    right: 0;
+    animation: slide-in 0.2s forwards;
 }
 
 .switch span{
@@ -147,7 +152,7 @@ ul li a:hover{
 }
 
 .social-links a:hover{
-    background: var(--social-hover);
+    background: var(--highlight-hover);
 }
 
 ion-icon{
@@ -171,5 +176,23 @@ footer p ion-icon{
     
     .light{
         --bg-url: url(../img/bg-mobile-light.jpg);
+    }
+}
+
+@keyframes slide-in{
+    from{
+        left: 0;
+    }
+    to{
+        left:50%;
+    }
+}
+
+@keyframes slide-out{
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
     }
 }
