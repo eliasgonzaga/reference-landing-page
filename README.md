@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto é uma reference landind page que permite adicionar links.
+DevLinks é uma reference landing page que permite adicionar links.
 
 
 - [Visite o projeto online](https://eliasgonzaga.github.io/reference-landing-page/)
